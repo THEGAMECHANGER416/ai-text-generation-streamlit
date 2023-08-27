@@ -3,7 +3,7 @@ import tensorflow as tf
 import streamlit as st
 import tensorflow_text as tf_text
 
-@st.cache
+@st.cache_resource
 def load_model():
     model = tf.keras.models.load_model('model')
     return model

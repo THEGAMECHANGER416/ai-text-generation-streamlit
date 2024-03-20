@@ -5,7 +5,7 @@ import tensorflow_text as tf_text
 
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('model/')
+    model = tf.keras.models.load_model('model')
     return model
 
 model=load_model()
